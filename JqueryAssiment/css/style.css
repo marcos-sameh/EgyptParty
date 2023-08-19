@@ -1,0 +1,166 @@
+:root {
+  --mainColor: #e68285;
+}
+.text-main {
+  color: var(--mainColor);
+}
+.bg-main {
+  background-color: var(--mainColor);
+}
+.border-main {
+  border-color: var(--mainColor) !important;
+}
+
+/* start header style */
+header {
+  background-image: url("../images/home.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+.layer-inside {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fjalla One", sans-serif;
+}
+p {
+  font-family: "Alegreya", serif;
+
+  font-family: "Poppins", sans-serif;
+
+  line-height: 1.8;
+}
+.open-menu {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  transition: all 1s ease-in-out;
+}
+.side-menu {
+  position: absolute;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: black;
+  color: white;
+  padding: 0;
+  transition: all 1s ease-in-out;
+}
+.side-menu-active {
+  left: 0% !important;
+}
+.open-menu-active {
+  left: 250px !important;
+}
+.side-menu ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.side-menu ul li {
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 1rem auto;
+}
+.side-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 1s ease-in-out;
+}
+.side-menu ul li a:hover {
+  color: var(--mainColor);
+}
+/*  end header style */
+
+h3 {
+  text-align: center;
+  color: white;
+  background-color: var(--mainColor);
+  padding: 10px 0;
+  margin: 0;
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+
+.contact-div {
+  background-color: #ccc;
+  text-align: center;
+  margin: 0;
+  padding: 10px 20px;
+  line-height: 1.8;
+  display: none;
+}
+
+.counter {
+  background-image: url("../images/baner.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-origin: content-box;
+  height: 40vh;
+}
+.second-layer {
+  height: 100%;
+  background-color: rgba(230, 130, 133, 0.3);
+}
+
+.counter-item {
+  border: 1px solid white;
+}
+
+.social-item {
+  transition: all 1s ease-in-out;
+}
+
+.social-item:hover {
+  background-color: var(--mainColor) !important;
+}
+.social-item:hover .social-link {
+  color: white !important ;
+}
+.btnUp {
+  position: fixed;
+  bottom: 10%;
+
+  right: 25px;
+
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  padding-top: 12px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--mainColor);
+  color: white;
+  z-index: 9999;
+  transition: all 0.8s ease-in-out;
+  display: none;
+  color: rgb(230, 130, 133);
+  transition: all 1s ease-in-out !important;
+}
+.d-block {
+  display: block;
+  color: white;
+}
+#nav {
+  transition: background-color 0.5s ease-in-out;
+}
+.nav-item,
+.navbar-brand {
+  transition: color 0.5s ease-in-out;
+}
+footer p {
+  font-family: "Dancing Script", cursive;
+}
